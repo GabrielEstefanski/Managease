@@ -1,7 +1,3 @@
 [build]
-command = "cd Frontend && npm install && npm run build"
+command = "cd Frontend && npm install && npm run build && cd .. && cd Backend && npm install && npm run dev"
 publish = "Frontend/dist"
-
-[build.backend]
-command = "cd Backend && npm install && npm run build"
-publish = "Backend/dist"
