@@ -1,6 +1,6 @@
 [build]
-command = "cd frontend && npm install && npm run build && npm run start:frontend"
-publish = "frontend/dist"
+command = "cd Frontend && npm install && npm run build && npm run start:Frontend"
+publish = "Frontend/dist"
 
 [dev]
-command = "npm run start:backend"
+command = "npm run start:Backend"
