@@ -2,5 +2,6 @@
 command = "cd Frontend && npm install && npm run build"
 publish = "Frontend/dist"
 
-[dev]
-command = "npm run dev"
+[build.backend]
+command = "cd Backend && npm install && npm run build"
+publish = "Backend/dist"
