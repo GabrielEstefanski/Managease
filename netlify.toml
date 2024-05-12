@@ -1,0 +1,6 @@
+[build]
+command = "npm run build && npm run start:frontend"
+publish = "frontend/dist"
+
+[dev]
+command = "npm run start:backend"
