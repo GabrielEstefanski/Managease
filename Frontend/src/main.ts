@@ -13,7 +13,6 @@ import Avatar from 'primevue/avatar';
 import InlineMessage from 'primevue/inlinemessage';
 import Breadcrumb from 'primevue/breadcrumb';
 import ConfirmDialog from 'primevue/confirmdialog';
-import SelectButton from 'primevue/selectbutton';
 import Knob from 'primevue/knob';
 import AutoComplete from 'primevue/autocomplete';
 import Dialog from 'primevue/dialog';

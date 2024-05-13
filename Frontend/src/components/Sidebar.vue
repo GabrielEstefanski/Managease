@@ -1,6 +1,6 @@
 <template>
     <div class="app-wrapper">
-        <Sidebar :visible="!isComponentOpen && isUserId" :modal="false" :show-close-icon="false" :header="'ManagEase'"
+        <Sidebar :visible="isComponentOpen && isUserId" :modal="false" :show-close-icon="false" :header="'ManagEase'"
             style="width: 220px; box-shadow: none;">
             <div>
                 <Button class="p-button p-button-rounded p-button-text" @click="redirectToDashboard">

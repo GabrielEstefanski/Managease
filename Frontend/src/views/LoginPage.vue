@@ -65,11 +65,7 @@ export default defineComponent({
         const router = useRouter();
         const store = useStore();
         const toasts = useToast();
-
-        function showFailedToast() {
-            toasts.add({ severity: 'error', summary: 'Error', detail: 'Company with this name already exists' });
-        }
-
+        
         onMounted(() => {
             if (props.showSuccessToast) {
                 toasts.add({ severity: 'success', summary: 'Success', detail: 'User registered successfully', life: 3000 });
@@ -85,6 +81,7 @@ export default defineComponent({
                     const id = response.data.message._id;
                     const name = response.data.message.name;
                     store.commit('setUser', { id, name });
+                    store.commit('openComponent');
                     router.push('/home');
                 }
             } catch (errors) {

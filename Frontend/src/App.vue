@@ -6,7 +6,7 @@
     <div  >
       <Sidebar></Sidebar>
     </div>
-    <div class="content" :style="{ 'padding-left': isComponentOpen || !isUserId ? '0' : '220px' }">
+    <div class="content" :style="{ 'padding-left': !isComponentOpen || !isUserId ? '0' : '220px' }">
       <router-view></router-view>
     </div>
   </div>
