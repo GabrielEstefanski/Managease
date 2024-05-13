@@ -1,6 +1,6 @@
 <template>
-    <Menubar v-if="isUserId" class="full-width " :class="{ 'open': isComponentOpen, 'small': !isComponentOpen }"
-        :style="{ left: isComponentOpen ? '0px' : '220px' }">
+    <Menubar v-if="isUserId" class="full-width " :class="{ 'open': !isComponentOpen , 'small': isComponentOpen }"
+        :style="{ left: !isComponentOpen ? '0px' : '220px' }">
         <template #start>
             <div class="centered-content">
                 <Button class="button" :class="{ 'active': isComponentOpen }" icon="pi pi-bars"
