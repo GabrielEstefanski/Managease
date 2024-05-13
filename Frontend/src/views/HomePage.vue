@@ -132,16 +132,9 @@
                         <Card class="small-chart-card mr-3">
                             <template #title>{{ $t('dashboard_page.card_doughnuts_sector') }}</template>
                             <template #content>
-                                <template v-if="expenseChartData.labels.length > 0">
-                                    <div class="flex-card">
-                                        <DoughnutChart :chart-data="sectorsChartData" />
-                                    </div>
-                                </template>
-                                <template v-else>
-                                    <div class="empty-card">
-                                        {{ $t('dashboard_page.empty_card') }}
-                                    </div>
-                                </template>
+                                <div class="flex-card">
+                                    <DoughnutChart :chart-data="sectorsChartData" />
+                                </div>
                             </template>
                         </Card>
                     </div>
@@ -260,7 +253,6 @@
                             </DataTable>
                         </div>
                     </div>
-
                 </div>
             </template>
         </div>
@@ -284,7 +276,6 @@ import ICompany from '@/interfaces/ICompany';
 import router from '@/router';
 import { useI18n } from 'vue-i18n';
 import { useStore } from 'vuex';
-import { watchEffect } from 'vue';
 
 export default defineComponent({
     name: 'HomePage',

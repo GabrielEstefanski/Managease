@@ -52,11 +52,33 @@ yarn install
 
 ```sh
 npm run dev
-
 ```
-5. Acesse o projeto em seu navegador:
+
+6. Acesse o Atlas MongoDB e crie uma collection:
+
+    Caso fique em dúvida de como criar collections no atlas acesse: 
+    https://www.mongodb.com/docs/atlas/atlas-ui/collections/
+
+    Clique em Connect depois Drivers e escolha o drive Node.js:
+    Deve aparecer como: 
+    </br>
+    
+    ``
+    mongodb+srv://<username>:<password>@cluster0.zq01pyh.mongodb.net/<collection>?retryWrites=true&w=majority&appName=Cluster0
+    ``
+
+    Acesse o manual: https://www.mongodb.com/docs/manual/reference/connection-string/
+
+7. Crie um arquivo .env na raiz do projeto backend. Exemplo:
+
+```env
+DB_CONNECTION_STRING=mongodb+srv://<username>:<password>@cluster0.zq01pyh.mongodb.net/<collection>?retryWrites=true&w=majority&appName=Cluster0
+```
+
+8. Acesse o projeto em seu navegador:
+
 ```
 http://localhost:8080/#/
 ```
 
-6. E você já pode acessar a aplicação!
+9. E você já pode acessar a aplicação!
